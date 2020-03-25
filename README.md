@@ -1,5 +1,11 @@
 # Fullstack Javascript Phonebook implementation
 
+## Stack
+Backend: node/express
+Frontend: reactjs
+Database: mongo
+Containerized with docker for development and production.
+
 ## Run in development
 `cd devops && docker-compose up`
 
