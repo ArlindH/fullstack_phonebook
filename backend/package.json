@@ -1,0 +1,47 @@
+{
+  "name": "fullstack-phonebook-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Arlind Hoxha",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "nodemon": "^2.0.2",
+    "npm": "^6.14.3",
+    "rimraf": "^3.0.2"
+  },
+  "nodemonConfig": {
+    "exec": "yarn run dev",
+    "watch": [
+      "./src"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-async-to-generator",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "scripts": {
+    "start": "yarn run prod",
+    "build": "yarn run clean && yarn run transpile",
+    "server": "node ./dist/bin/www",
+    "dev": "yarn run build && NODE_ENV=development yarn run server",
+    "prod": "yarn run build && NODE_ENV=production yarn run server",
+    "transpile": "babel ./src --out-dir dist",
+    "clean": "rimraf dist",
+    "watch:dev": "nodemon"
+  }
+}

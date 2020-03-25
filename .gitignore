@@ -1,0 +1,7 @@
+node_modules
+devops/data
+.vscode
+.DS_STORE
+devops/data_prod
+backend/dist
+frontend/build
