@@ -24,5 +24,5 @@ services:
             context: ../frontend/
             dockerfile: ./dockerfiles/prod.Dockerfile
         ports:
-            - "80:80"
+            - "81:80"
         tty: true # Quick hack: https://github.com/facebook/create-react-app/issues/8688
