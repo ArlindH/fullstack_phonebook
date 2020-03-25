@@ -5,6 +5,5 @@
 
 ## Run in production
 1-tier docker based architecture for production. Backend, frontend and database reside in the same server. NGINX configured as an ingress point to the server.
-
-Command: 
+ 
 `cd devops && docker-compose -f docker-compose-prod.yaml up` 
