@@ -1,6 +1,6 @@
 # Fullstack Javascript Phonebook implementation
 
-## Run for development
+## Run in development
 `cd devops && docker-compose up`
 
 ## Run in production
